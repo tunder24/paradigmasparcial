@@ -1,0 +1,79 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    background: #707070;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+/* Añade un media query para adaptar el estilo a pantallas más pequeñas */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Reduzco el tamaño de fuente para pantallas más pequeñas */
+    }
+}
+
+/* Menu de la página */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+}
+
+#menu.show {
+    display: block;
+    max-height: 300px;
+    opacity: 1;
+}
+
+.menu-item a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease-out;
+}
+
+.menu-item a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Botones del juego */
+.botones-juego {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.resultado {
+    font-size: 24px;
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+}
+
+/* Hacer que los elementos sean más adaptables a pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu-item a {
+        padding: 8px 12px;
+    }
+
+    .botones-juego {
+        flex-direction: column; /* Cambia a una disposición vertical en pantallas pequeñas */
+        gap: 15px;
+    }
+
+    .resultado {
+        font-size: 18px; /* Reduce el tamaño de fuente para pantallas pequeñas */
+    }
+}
+    
